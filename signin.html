@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sign In - TaskBud</title>
+  <link rel="icon" href="path/to/your/favicon.ico" type="image/x-icon">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css"> <!-- Include your CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <style>
+    body {
+      font-family: 'Open Sans', sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    .signin-header {
+      background: linear-gradient(90deg, #212347, #4a4e69); /* Gradient background */
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin: 20px auto;
+      width: fit-content;
+      border-radius: 10px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .signin-header:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+    }
+
+    .signin-container {
+      max-width: 400px;
+      margin: 40px auto;
+      padding: 20px;
+      background: linear-gradient(180deg, rgba(255, 255, 255, 0.9), rgba(240, 240, 240, 0.9));
+      border-radius: 10px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    }
+
+    .signin-container h2 {
+      text-align: center;
+      color: #212347; /* Primary color */
+      margin-bottom: 20px;
+    }
+
+    .signin-form {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+
+    .signin-form input {
+      padding: 15px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      font-size: 1rem;
+      transition: border-color 0.3s;
+    }
+
+    .signin-form input:focus {
+      border-color: #212347; /* Highlight color */
+      outline: none;
+    }
+
+    .signin-form button {
+      padding: 15px;
+      background-color: #212347; /* Primary color */
+      color: white;
+      border: none;
+      border-radius: 5px;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    .signin-form button:hover {
+      background-color: #1a1f2a; /* Darker shade for hover */
+    }
+
+    .signin-info {
+      margin-top: 20px;
+      text-align: center;
+      color: #7f8c8d;
+    }
+
+    .signin-info a {
+      color: #212347; /* Primary color for links */
+      text-decoration: none;
+    }
+
+    .signin-info a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <div class="logo-container">
+      <img src="images/logo.jpg" alt="TaskBud Logo" class="logo">
+      <div class="title">
+        <h1>TaskBud</h1>
+        <p>Start organizing your assignments today!</p>
+      </div>
+    </div>
+    <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="signin.html">Sign In</a></li> <!-- New Sign In link -->
+        </ul>
+      </nav>
+  </header>
+
+  <main>
+    <div class="signin-header">
+      <h1>Sign In</h1>
+    </div>
+
+    <div class="signin-container">
+      <h2>Welcome Back!</h2>
+      <form class="signin-form" action="login_process.php" method="post">
+        <input type="email" name="email" placeholder="Your Email" required>
+        <input type="password" name="password" placeholder="Your Password" required>
+        <button type="submit">Sign In</button>
+      </form>
+      <div class="signin-info">
+        <p>Don't have an account? <a href="signup.html">Sign Up</a></p>
+        <p><a href="forgot_password.html">Forgot Password?</a></p>
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-content">
+      <div class="footer-left">
+        <h2>Stay Connected</h2>
+        <p>Subscribe to our newsletter for the latest updates and tips!</p>
+        <form class="newsletter-form">
+          <input type="email" placeholder="Enter your email" required>
+          <button type="submit">Subscribe</button>
+        </form>
+      </div>
+      <div class="footer-right">
+        <div class="quick-links">
+          <h3>Quick Links</h3>
+          <a href="about.html">About</a>
+          <a href="contact.html">Contact</a>
+          <a href="#privacy">Privacy Policy</a>
+          <a href="#terms">Terms of Service</a>
+        </div>
+      </div>
+    </div>
+    <p>&copy; 2025 TaskBud. Designed to make your life easier.</p>
+  </footer>
+</body>
+</html>

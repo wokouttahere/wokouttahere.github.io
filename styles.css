@@ -1,0 +1,784 @@
+
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary-color: #ffcc00;
+  --secondary-color: #00264d;
+  --text-color: #ffffff;
+  --hover-color: #e6b800;
+  --button-color: #0056b3;
+}
+
+
+/* Body Styling */
+body {
+  font-family: 'Open Sans', sans-serif;
+  color: var(--text-color);
+  background-color: var(--secondary-color);
+  line-height: 1.6;
+}
+
+/* Header Styling */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  background: linear-gradient(to right, #00264d, #0056b3); /* Dark gradient */
+  color: var(--text-color);
+}
+
+
+.logo-container {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  width: 70px;
+  margin-right: 10px;
+}
+
+.title h1 {
+  font-size: 20px;
+  font-family: 'Roboto', sans-serif;
+}
+
+.title p {
+  font-size: 12px;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+}
+
+nav ul li {
+  margin: 0 8px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: var(--text-color);
+  font-size: 14px;
+}
+
+nav ul li a:hover {
+  color: var(--hover-color);
+  transform: scale(1.05);
+  transition: transform 0.2s;
+}
+
+.sign-in-button {
+  margin-left: auto;
+  padding: 5px 15px;
+  border: none;
+  border-radius: 4px;
+  background-color: var(--button-color);
+  color: var(--text-color);
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+}
+
+.sign-in-button:hover {
+  color: var(--hover-color);
+  transform: scale(1.05);
+  transition: transform 0.2s;
+}
+
+/* Intro Section */
+.intro {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start; /* Align items to the top */
+  margin: 40px 50px;
+}
+
+.intro-content {
+  display: flex;
+  width: 100%;
+}
+
+.intro-text {
+  width: 50%; /* Adjusted width for better fit */
+  margin-right: 40px; /* Increased space between text and video */
+}
+
+.intro-text h1 {
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 10px; /* Reduced margin */
+}
+
+.intro-text p {
+  font-size: 16px;
+  line-height: 1.6; /* Increased line spacing for readability */
+  margin-bottom: 20px; /* Increased space between paragraph and button */
+}
+
+/* Info Sections */
+.info-section {
+  padding: 20px; /* Inner padding for the content */
+  margin: 20px 10%; /* Margin to separate from edges */
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.1); /* Slightly transparent background */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Header and Text Styles */
+.info-section h2 {
+  color: var(--primary-color); /* Use primary color for headings */
+  margin-bottom: 10px;
+  animation: fadeIn 0.5s ease forwards; /* Animation for heading */
+}
+
+.info-section p {
+  color: #eaeaea; /* Light color for paragraph text */
+}
+
+.get-started-button {
+  padding: 10px 20px;
+  background-color: var(--button-color);
+  color: var(--text-color);
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.get-started-button:hover {
+  background-color: #004d99;
+}
+
+.intro-video {
+  width: 40%; /* Adjusted width for better alignment */
+  overflow: hidden;
+  display: flex; /* Added flex display for centering */
+  justify-content: flex-end; /* Align video to the right */
+}
+
+.intro-video video {
+  width: 100%;
+  max-height: 200px; /* Set max height to align with title */
+  border-radius: 20px; /* Soft edges for blending with background */
+  object-fit: cover; /* Ensures video fills the area */
+  outline: none; /* Remove outline for cleaner look */
+}
+
+/* Enhanced Features Styling */
+.features-title {
+  border: 2px solid #0056b3; /* Border color */
+  border-radius: 10px; /* Soft edges */
+  padding: 10px 20px; /* Adjust padding for less stretch */
+  text-align: center; /* Center the text */
+  margin: 0 auto 0px; /* Center the title and space below it */
+  max-width: 90%; /* Limit tje width to prevent overstretching */
+}
+
+.features h2 {
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 20px;
+}/* Box Style Features */
+.features-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: 20px; /* Add margin for spacing */
+}
+
+.feature-card {
+  background-color: var(--text-color);
+  color: var(--secondary-color);
+  border-radius: 15px;
+  width: 320px; /* Consistent width */
+  margin: 20px; /* Consistent margin */
+  padding: 30px; /* Consistent padding */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s, box-shadow 0.3s;
+  text-align: center;
+}
+
+.feature-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+.feature-card img {
+  width: 80%; /* Reduce image width */
+  max-height: 150px; /* Limit max height for better proportion */
+  border-radius: 10px; /* Keep consistent image styling */
+  margin-bottom: 15px;
+}
+
+.feature-card h3 {
+  margin-top: 10px; /* Ensure there's space above the title */
+  font-size: 18px; /* Adjust font size for better visibility */
+}
+
+.feature-card p {
+  font-size: 14px; /* Ensure text size is appropriate */
+  margin-top: 10px; /* Space above the text */
+}
+
+/* View More Features Section */
+.view-more-features {
+  border-radius: 10px;
+  margin-top: 40px; /* Space from main features */
+  text-align: center; /* Center the title */
+}
+
+.toggle-title {
+  background-color: #ffffff; /* Light background for the title */
+  color: var(--secondary-color); /* Dark text for contrast */
+  padding: 15px; /* Padding for spacing */
+  border-radius: 10px; /* Rounded edges on all sides */
+  font-size: 20px; /* Increased font size */
+  margin: 0 auto; /* Remove margin */
+  cursor: pointer; /* Change cursor to pointer */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for title */
+  max-width: 300px; /* Set maximum width for the title */
+  display: inline-block; /* Make the title box inline-block for centering */
+}
+
+.toggle-checkbox {
+  display: none; /* Hide the checkbox */
+}
+
+.features-different-design {
+  margin-top: 20px;
+  padding: 0 20px; /* Keep padding around the section */
+  display: flex; /* Use flexbox for alignment */
+  justify-content: space-around; /* Even space between items */
+  max-height: 0; /* Hidden by default */
+  overflow: hidden; /* Hide overflow */
+  transition: max-height 0.5s ease-out; /* Smooth transition */
+  background-color: #00264d; /* Set a light color for the background of the section */
+  border-bottom-left-radius: 10px; /* Rounded edges */
+  border-bottom-right-radius: 10px; /* Rounded edges */
+}
+
+.toggle-checkbox:checked + .toggle-title + .features-different-design {
+  max-height: 1000px; /* Expand to a maximum height */
+}
+
+.features-different-design.show {
+  display: flex; /* Show when active */
+  opacity: 1; /* Fade in effect */
+}
+
+/* Feature Item Styles */
+.feature-item {
+  background-color: #ffffff; /* White background for each card */
+  color: #00264d; /* Dark text for contrast */
+  border-radius: 12px; /* Increased border radius for rounder edges */
+  width: calc(25% - 16px); /* Width for a snug fit */
+  margin: 8px; /* Maintain small margin for spacing */
+  padding: 15px; /* Padding for each item */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  text-align: center; /* Center text */
+  transition: transform 0.3s; /* Smooth hover effect */
+}
+
+.feature-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+.feature-item img {
+  width: 80%;
+  max-height: 150px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+/* Responsive Design */
+@media (max-width: 768px) {
+  .features-container, .features-different-design {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .feature-item, .feature-card {
+    width: 90%; /* Adjust card width for smaller screens */
+  }
+}
+
+
+/* Dashboard Overview Title Styling */
+.dashboard-overview-title {
+  background-color: #031d38; /* Light background color */
+  color: #f0f0f0; /* Dark text for contrast */
+  padding: 15px 20px; /* Padding for spacing */
+  border-radius: 10px; /* Rounded corners */
+  margin: 20px 0; /* Space above and below the title */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  font-size: 24px; /* Font size */
+  font-weight: bold; /* Bold text for emphasis */
+  text-align: left; /* Align text to the left */
+}
+
+/* Study Tips Section */
+.study-tips {
+  padding: 40px 20px; /* Padding for the section */
+  background-color: #00264d; /* Dark background for contrast */
+  border-radius: 10px; /* Rounded edges */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+}
+
+/* Title Styles */
+.study-tips-title {
+  text-align: center; /* Center the title */
+  color: #f5f6f7; /* Light color for contrast */
+  margin-bottom: 20px; /* Space below the title */
+  font-size: 28px; /* Larger font size */
+  font-weight: bold; /* Bold text */
+}
+
+/* Tips List Styles */
+.tips-list {
+  list-style-type: none; /* Remove default list style */
+  padding: 0; /* Remove padding */
+  line-height: 1.6; /* Increase line height for readability */
+}
+
+.tips-list li {
+  display: flex; /* Flexbox for alignment */
+  align-items: center; /* Center items vertically */
+  background-color: #ffffff; /* White background for each tip */
+  border-radius: 8px; /* Rounded corners */
+  padding: 15px 20px; /* Padding for each item */
+  margin-bottom: 15px; /* Space between tips */
+  color: #333; /* Dark text for better readability */
+  position: relative; /* Positioning for pseudo-elements */
+  transition: transform 0.3s, box-shadow 0.3s; /* Smooth transition for hover effect */
+}
+
+/* Button Style */
+.tip-button {
+  background-color: #007bff; /* Blue button color */
+  border: none; /* Remove border */
+  border-radius: 50%; /* Circular button */
+  width: 15px; /* Width of the button */
+  height: 15px; /* Height of the button */
+  margin-right: 10px; /* Space between button and text */
+  cursor: pointer; /* Pointer cursor on hover */
+  transition: background-color 0.3s; /* Smooth color transition */
+}
+
+.tip-button:hover {
+  background-color: #0056b3; /* Darken the button on hover */
+}
+
+/* Hover Effect */
+.tips-list li:hover {
+  transform: translateY(-5px); /* Lift effect on hover */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Deeper shadow on hover */
+}
+
+/*contact*/
+.contact-us {
+  background-color: #00264d; 
+  padding: 50px 0;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+
+.contact-form-container {
+  background-color: #fff;
+  width: 90%;
+  max-width: 700px; /* Smaller form width */
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(10px); /* Subtle blur effect */
+}
+
+.contact-us h2 {
+  color: #333;
+  font-size: 2rem;
+  margin-bottom: 20px;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  color: #333;
+  font-size: 1rem;
+  margin-bottom: 5px;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 12px;
+  font-size: 1rem;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  box-sizing: border-box;
+  transition: border-color 0.3s ease;
+}
+
+input:focus, textarea:focus {
+  border-color: #4CAF50;
+  outline: none;
+}
+
+textarea {
+  height: 150px;
+}
+
+button.submit-btn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 24px;
+  font-size: 1.1rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button.submit-btn:hover {
+  background-color: #45a049;
+}
+
+
+
+
+/* Dashboard Item Table */
+.dashboard-item {
+  margin-top: 20px;
+}
+
+#upcoming-deadlines h2,
+#recent-activity h2,
+#statistics h2 {
+  color: lemonchiffon; /* Change title color to white */
+}
+
+/* Table Styles */
+.table-responsive {
+  overflow-x: auto;
+}
+
+.styled-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+  font-size: 18px;
+}
+
+.styled-table thead tr {
+  background-color: var(--primary-color); /* Header background color */
+  color: var(--secondary-color);
+}
+
+.styled-table th,
+.styled-table td {
+  padding: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.styled-table tbody tr {
+  background-color: rgba(255, 255, 255, 0.05); /* Subtle row color */
+  transition: background-color 0.3s;
+}
+
+.styled-table tbody tr:hover {
+  background-color: rgba(255, 255, 255, 0.1); /* Row hover effect */
+}
+
+/* Notification List Styles */
+.notification-list {
+  max-height: 300px; /* Limit height for scrolling */
+  overflow-y: auto; /* Enable scrolling */
+  border-radius: 8px;
+  padding: 10px;
+}
+
+/* Notification Item Styles */
+.notification {
+  display: flex;
+  align-items: center;
+  padding: 12px;
+  margin: 5px 0;
+  border-radius: 8px;
+  background-color: #315992; /* Slightly opaque background */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.notification:hover {
+  background-color: rgba(119, 185, 250, 0.8); /* Light hover effect */
+  transform: scale(1.02); /* Slightly enlarge on hover */
+}
+
+/* Notification Icon Styles */
+.notification-icon {
+  font-size: 28px; /* Adjust size */
+  margin-right: 15px;
+  transition: transform 0.3s;
+}
+
+.notification:hover .notification-icon {
+  transform: rotate(360deg); /* Rotate icon on hover */
+}
+
+/* Notification Content Styles */
+.notification-content {
+  flex-grow: 1; /* Take up remaining space */
+}
+
+/* Notification Title Styles */
+.notification-title {
+  font-weight: bold;
+  color: rgb(255, 255, 255);
+}
+
+/* Notification Time Styles */
+.notification-time {
+  font-size: 12px;
+  color: #dad2d2; /* Grey color for time */
+}
+
+/* Slide-in Animation for Notifications */
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.slide-in {
+  animation: slideIn 0.5s ease forwards; /* Apply slide-in effect */
+}
+
+/* Fade-in Animation for the Dashboard Item */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-in {
+  animation: fadeIn 0.5s ease forwards; /* Apply fade-in effect */
+}
+
+/* Statistics Overview Styles */
+.stats-overview {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  padding: 20px; /* Added padding for space */
+  border-radius: 10px; /* Rounded corners */
+  background-color: rgba(255, 255, 255, 0.1); /* Slightly transparent background */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Shadow for depth */
+}
+
+/* Individual Statistic Styles */
+.statistic {
+  flex: 1;
+  margin: 0 10px;
+  text-align: center;
+}
+
+/* Bar Styles */
+.bar {
+  width: 100%;
+  transition: height 0.5s ease;
+  position: relative;
+  border-radius: 5px;
+}
+/* Distinct Colors for Each Bar */
+.completed {
+  background-color: #4caf50; /* Green for completed tasks */
+}
+
+.pending {
+  background-color: #ff9800; /* Orange for pending tasks */
+}
+
+.hours {
+  background-color: #2196f3; /* Blue for average study hours */
+}
+
+.on-time {
+  background-color: #f44336; /* Red for on-time assignments */
+}
+
+/* Label Styles */
+.stat-label {
+  margin-top: 10px;
+  font-weight: bold;
+  color: #eaeaea; /* Light color for labels */
+  transition: color 0.3s; /* Smooth color transition */
+}
+
+/* Tooltip Effect */
+.bar:hover::after {
+  content: attr(data-title);
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #333;
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 5px;
+  white-space: nowrap;
+  opacity: 0.8;
+  font-size: 12px;
+  transition: opacity 0.3s;
+}
+
+/* Loading Spinner */
+.loading-spinner {
+  border: 5px solid var(--primary-color);
+  border-top: 5px solid var(--secondary-color);
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  animation: spin 1s linear infinite;
+  display: none; /* Change to block if you want to show it */
+  margin: 20px auto; /* Center the spinner */
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* Footer */
+footer {
+  padding: 40px 20px; /* Increased padding for a spacious look */
+  background: linear-gradient(to right, #00264d, #0056b3); /* Gradient background */
+  color: var(--text-color);
+}
+
+/* Footer Content */
+.footer-content {
+  display: flex;
+  justify-content: space-between; /* Space between left and right sections */
+  align-items: flex-start; /* Align items to the top */
+}
+
+/* Left Section */
+.footer-left {
+  flex: 1; /* Take available space */
+  max-width: 50%; /* Limit width */
+}
+
+/* Right Section */
+.footer-right {
+  flex: 1; /* Take available space */
+  max-width: 40%; /* Limit width */
+}
+
+/* Newsletter Form */
+.newsletter-form {
+  display: flex;
+  margin: 20px 0; /* Space around the form */
+}
+
+.newsletter-form input {
+  padding: 10px;
+  border-radius: 5px 0 0 5px; /* Rounded corners */
+  border: none;
+  outline: none;
+  font-size: 16px; /* Input text size */
+}
+
+.newsletter-form button {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 0 5px 5px 0; /* Rounded corners */
+  background-color: var(--primary-color); /* Button color */
+  color: var(--text-color);
+  cursor: pointer;
+  transition: background-color 0.3s; /* Smooth color transition */
+}
+
+.newsletter-form button:hover {
+  background-color: #e6b800; /* Darken on hover */
+}
+
+/* Social Icons Section */
+.socials {
+  margin-top: 10px; /* Space between text and icons */
+}
+
+.social-icon {
+  margin: 0 15px; /* Space between icons */
+  text-decoration: none; /* Remove underline */
+  color: var(--text-color); /* Icon color */
+  font-size: 24px; /* Icon size */
+  transition: transform 0.3s, color 0.3s; /* Smooth hover effect */
+}
+
+.social-icon:hover {
+  transform: translateY(-5px); /* Lift effect on hover */
+  color: #ffcc00; /* Change color on hover */
+}
+
+/* Quick Links Section */
+.quick-links {
+  margin: 20px 0; /* Space around the links */
+}
+
+.quick-links h3 {
+  margin-bottom: 10px; /* Space below the title */
+  font-size: 18px; /* Title size */
+}
+
+.quick-links a {
+  color: var(--text-color); /* Link color */
+  text-decoration: none; /* Remove underline */
+  margin: 5px 0; /* Space between links */
+  display: block; /* Block level for better spacing */
+  transition: color 0.3s; /* Smooth color transition */
+}
+
+.quick-links a:hover {
+  color: #ffcc00; /* Change color on hover */
+}
+
+/* Contact Info Section */
+.contact-info {
+  margin: 10px 0; /* Space around contact info */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .features-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav ul {
+    flex-direction: column;
+  }
+}

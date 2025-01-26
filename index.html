@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TaskBud - Assignment Tracker</title>
+  <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <div class="logo-container">
+      <img src="images/logo.jpg" alt="TaskBud Logo" class="logo">
+      <div class="title">
+        <h1>TaskBud</h1>
+        <p>Start organizing your assignments today!</p>
+      </div>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="signin.html">Sign In</a></li> <!-- New Sign In link -->
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Intro Section -->
+    <section id="intro" class="intro">
+      <div class="intro-content">
+        <div class="intro-text">
+          <h1>Welcome to TaskBud!</h1>
+          <p>Stay ahead of your assignments with ease, efficiency, and style! Our platform helps you organize your tasks, track deadlines, and collaborate with peers seamlessly. Get started today to enhance your productivity!</p>
+          <a href="#features" class="get-started-button">Get Started</a>
+        </div>
+        <div class="intro-video">
+          <video autoplay muted loop>
+            <source src="images/study.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+        </div>
+      </div>
+    </section>
+
+    
+
+    <!-- Enhanced Features Section -->
+    <section id="features" class="features">
+      <div class="features-title">
+        <h2>Features of TaskBud</h2>
+      </div>
+      <div class="features-container">
+        <!-- Box Style Features -->
+        <div class="feature-card feature-card-1">
+          <img src="images/photo6.jpg" alt="Organize Assignments">
+          <h3>Organize Assignments</h3>
+          <p>Keep all your tasks in one place and stay on top of your schedule. Organizing your assignments by subject or due date has never been easier!</p>
+        </div>
+
+        <div class="feature-card feature-card-2">
+          <img src="images/photo2.jpg" alt="Track Deadlines">
+          <h3>Track Deadlines</h3>
+          <p>Never miss a deadline with our intuitive reminders. Set alerts and due dates to help you manage your time effectively.</p>
+        </div>
+
+        <div class="feature-card feature-card-3">
+          <img src="images/photo8.jpg" alt="Set Goals">
+          <h3>Set Goals</h3>
+          <p>Plan ahead and achieve milestones to stay productive and motivated. Visualize your progress with our goal-setting tools.</p>
+        </div>
+      </div>
+
+      <div class="view-more-features">
+        <input type="checkbox" id="toggle-features" class="toggle-checkbox">
+        <label for="toggle-features" class="toggle-title">View More Features</label>
+        <div class="features-different-design">
+          <div class="feature-item">
+            <div class="feature-image">
+              <img src="images/image0.jpg" alt="Study Planner">
+            </div>
+            <h3>Study Planner</h3>
+            <p>Organize your study schedule with our easy-to-use planner.</p>
+          </div>
+          
+          <div class="feature-item">
+            <div class="feature-image">
+              <img src="images/image2.jpg" alt="Resource Library">
+            </div>
+            <h3>Resource Library</h3>
+            <p>Access a vast library of study materials and resources.</p>
+          </div>
+          
+          <div class="feature-item">
+            <div class="feature-image">
+              <img src="images/image3.jpg" alt="Progress Tracker">
+            </div>
+            <h3>Progress Tracker</h3>
+            <p>Track your progress and stay motivated with our tools.</p>
+          </div>
+          
+          <div class="feature-item">
+            <div class="feature-image">
+              <img src="images/image1.jpg" alt="Collaboration Tools">
+            </div>
+            <h3>Collaboration Tools</h3>
+            <p>Utilize various collaboration tools to work effectively with your study group.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+<!-- Dashboard Section -->
+<section id="dashboard" class="dashboard">
+  <h2 class="dashboard-overview-title">👩‍🎓 Your Dashboard Overview</h2>
+</section>
+
+  <!-- Upcoming Deadlines Section -->
+  <section id="upcoming-deadlines" class="info-section fade-in">
+    <h2>🚀 Upcoming Deadlines</h2>
+    <p>Stay on top of your tasks with these important deadlines.</p>
+    <div class="table-responsive">
+      <table class="styled-table">
+        <thead>
+          <tr>
+            <th>Assignment</th>
+            <th>Started On</th>
+            <th>Due Date</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Math Homework</td>
+            <td>Jan 20</td>
+            <td>Jan 25</td>
+          </tr>
+          <tr>
+            <td>Science Project</td>
+            <td>Jan 22</td>
+            <td>Jan 30</td>
+          </tr>
+          <tr>
+            <td>History Essay</td>
+            <td>Jan 15</td>
+            <td>Feb 5</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <!-- Recent Activity Section -->
+  <section id="recent-activity" class="info-section fade-in">
+    <h2>📅 Recent Activity</h2>
+    <p>Stay updated with your activity notifications.</p>
+    <div class="notification-list">
+      <div class="notification slide-in">
+        <span class="notification-icon">✅</span>
+        <div class="notification-content">
+          <p class="notification-title"><strong>Submitted:</strong> Math Homework</p>
+          <span class="notification-time">2 hours ago</span>
+        </div>
+      </div>
+      <div class="notification slide-in">
+        <span class="notification-icon">🔄</span>
+        <div class="notification-content">
+          <p class="notification-title"><strong>Updated:</strong> Science Project</p>
+          <span class="notification-time">4 hours ago</span>
+        </div>
+      </div>
+      <div class="notification slide-in">
+        <span class="notification-icon">📝</span>
+        <div class="notification-content">
+          <p class="notification-title"> <strong>Completed:</strong> History Essay Draft</p>
+          <span class="notification-time">1 day ago</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Statistics Section -->
+  <section id="statistics" class="info-section fade-in">
+    <h2>📊 Statistics</h2>
+    <p>Analyze your productivity and see how you can improve your study habits.</p>
+    
+    <div class="stats-overview">
+      <div class="statistic">
+        <div class="bar completed" style="height: 80%;" data-title="Tasks Completed: 15"></div>
+        <span class="stat-label">Tasks Completed</span>
+      </div>
+      <div class="statistic">
+        <div class="bar pending" style="height: 50%;" data-title="Tasks Pending: 5"></div>
+        <span class="stat-label">Tasks Pending</span>
+      </div>
+      <div class="statistic">
+        <div class="bar hours" style="height: 70%;" data-title="Average Study Hours: 5"></div>
+        <span class="stat-label">Avg. Study Hours</span>
+      </div>
+      <div class="statistic">
+        <div class="bar on-time" style="height: 90%;" data-title="On-Time Assignments: 12"></div>
+        <span class="stat-label">On-Time Assignments</span>
+      </div>
+    </div>
+  </section>
+</section>
+
+<!-- Tips for Effective Studying Section -->
+<section id="study-tips" class="study-tips">
+  <h2 class="study-tips-title">📚 Tips for Effective Studying</h2>
+  <ul class="tips-list">
+    <li>
+      <button class="tip-button"></button>
+      <span><strong>Set Clear Goals:</strong> Define what you want to achieve in each study session.</span>
+    </li>
+    <li>
+      <button class="tip-button"></button>
+      <span><strong>Use Active Learning Techniques:</strong> Engage with the material through discussions, teaching others, or practice problems.</span>
+    </li>
+    <li>
+      <button class="tip-button"></button>
+      <span><strong>Take Regular Breaks:</strong> Use techniques like the Pomodoro Technique to stay focused.</span>
+    </li>
+    <li>
+      <button class="tip-button"></button>
+      <span><strong>Stay Organized:</strong> Keep your study space tidy and your materials sorted.</span>
+    </li>
+    <li>
+      <button class="tip-button"></button>
+      <span><strong>Mix Up Study Locations:</strong> Change your environment to boost creativity and focus.</span>
+    </li>
+    <li>
+      <button class="tip-button"></button>
+      <span><strong>Practice Mindfulness:</strong> Incorporate meditation or deep-breathing exercises to reduce stress.</span>
+    </li>
+  </ul>
+</section>
+
+<!--contact section -->
+<section class="contact-us">
+  <div class="contact-form-container">
+    <h2>Have Questions? Contact Us!</h2>
+    <form action="mailto:pakpheavatey@gmail.com" method="POST" enctype="text/plain">
+      <div class="form-group">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required placeholder="Enter your name">
+      </div>
+      <div class="form-group">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required placeholder="Enter your email">
+      </div>
+      <div class="form-group">
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" required placeholder="Enter your message"></textarea>
+      </div>
+      <button type="submit" class="submit-btn">Send Message</button>
+    </form>
+  </div>
+</section>
+
+
+    <!-- Loading Spinner -->
+    <div class="loading-spinner"></div>
+  </main>
+
+<!-- Footer -->
+<footer>
+  <div class="footer-content">
+    <div class="footer-left">
+      <h2>Stay Connected</h2>
+      <p>Subscribe to our newsletter for the latest updates and tips!</p>
+      
+      <form class="newsletter-form">
+        <input type="email" placeholder="Enter your email" required>
+        <button type="submit">Subscribe</button>
+      </form>
+
+      <div class="socials">
+        <a href="https://www.facebook.com/pheavatey.keo?mibextid=JRoKGi" target="_blank" class="social-icon">
+          <i class="fab fa-facebook-f"></i>
+        </a>
+        <a href="https://www.instagram.com/luvatey?igsh=a2U5emFsNHZld2t4" target="_blank" class="social-icon">
+          <i class="fab fa-instagram"></i>
+        </a>
+        <a href="mailto:pakpheavateykeo@gmail.com" class="social-icon">
+          <i class="fas fa-envelope"></i>
+        </a>
+      </div>
+    </div>
+
+    <div class="footer-right">
+      <div class="quick-links">
+        <h3>Quick Links</h3>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+        <a href="#privacy">Privacy Policy</a>
+        <a href="#terms">Terms of Service</a>
+      </div>
+
+      <div class="contact-info">
+        <p>Contact us: +855 87 869 604 / +855 96 519 8711</p>
+      </div>
+    </div>
+  </div>
+
+  <p>&copy; 2025 TaskBud. Designed to make your life easier.</p>
+</footer>
+</body>
+</html>
